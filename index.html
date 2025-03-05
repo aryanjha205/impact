@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample HTML page demonstrating various HTML tags.">
+    <title>Sample HTML Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a small team dedicated to creating awesome web content. Our mission is to make the web a better place.</p>
+            <p>Here's a quote we live by:</p>
+            <blockquote>
+                "Simplicity is the ultimate sophistication." - Aryan jha
+            </blockquote>
+            <h3>Employee List</h3>
+            <ul>
+                <li>Aryan Jha - Manager</li>
+                <li> Rahul singh - Developer</li>
+                <li> Raj parikh  - Designer</li>
+                <li>priya dave - Content Creator</li>
+            </ul>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ol>
+                <li>Web Design</li>
+                <li>SEO Optimization</li>
+                <li>Content Creation</li>
+            </ol>
+            <blockquote>
+                "The best way to predict the future is to create it." - Aryan jha
+            </blockquote>
+            <p>Check out our latest project:</p>
+            <a href="https://weather-lac-delta.vercel.app/" target="_blank">
+                <img src="C:\Users\aryan\OneDrive\Desktop\Assignment impact\icon.gif" alt="Sample Project">
+                <p>Weather app</p>
+            </a>
+            <p>Watch our promotional video:</p>
+            <video width="400" controls>
+                <source src="C:\Users\aryan\OneDrive\Desktop\Assignment impact\2a446af1-db03-47d1-a206-545a1331fd97.mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Listen to our theme song:</p>
+            <audio controls>
+                <source src="C:\Users\aryan\OneDrive\Desktop\Assignment impact\1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Here is a table of our services:</p>
+            <table>
+                <caption>Service List</caption>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Design</td>
+                        <td>Creating visually appealing and user-friendly websites.</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>SEO Optimization</td>
+                        <td>Improving website visibility on search engines.</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Content Creation</td>
+                        <td>Producing high-quality content for websites.</td>
+                        <td>$200</td>
+                    </tr>
+                </tbody>
+            </table>
+           
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <label for="service">Choose a service:</label>
+                <select id="service" name="service">
+                    <option value="web-design">Web Design</option>
+                    <option value="seo">SEO Optimization</option>
+                    <option value="content-creation">Content Creation</option>
+                </select>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </fieldset>
+            <noscript>
+                <p>Hlo i am aryan.</p>
+            </noscript>
+            <p>Here is an embedded iframe:</p>
+            <iframe src="https://www.example.com" width="600" height="400" title="Example iframe"></iframe>
+        </section>
+    </main>
+
+    <aside>
+       
+        <p>Manager: Aryan Jha</p>
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/vadodara.is.love/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.snapchat.com/add/aryanjha205" target="_blank">Snapchat</a></li>
+        </ul>
+    </aside>
+
+    <p>Here is a canvas example:</p>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#FF0000';
+        ctx.fillRect(0, 0, 150, 75);
+    </script>
+    <p>Here is an SVG example:</p>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <p>Follow us on <a href="https://twitter.com/example" target="_blank">Twitter</a>.</p>
+    </footer>
+
+</body>
+</html>
